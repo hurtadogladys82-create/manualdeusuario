@@ -1,126 +1,225 @@
-const deviceTabs = [...document.querySelectorAll(".device-tab")];
+document.addEventListener("DOMContentLoaded", () => {
+  const deviceTabs = [...document.querySelectorAll(".device-tab")];
 
-deviceTabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    deviceTabs.forEach((t) => {
-      const selected = t === tab;
-      t.setAttribute("aria-selected", String(selected));
-      document.getElementById(t.getAttribute("aria-controls")).hidden =
-        !selected;
+  deviceTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      deviceTabs.forEach(item => {
+        const selected = item === tab;
+        item.setAttribute("aria-selected", String(selected));
+        const panel = document.getElementById(item.getAttribute("aria-controls"));
+        panel.hidden = !selected;
+      });
     });
   });
-});
 
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
 
-menuBtn.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
-  menuBtn.setAttribute("aria-expanded", String(open));
-  menuBtn.textContent = open ? "✕ Cerrar" : "☰ Menú";
-});
-
-navLinks.querySelectorAll("a").forEach((a) => {
-  a.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    menuBtn.setAttribute("aria-expanded", "false");
-    menuBtn.textContent = "☰ Menú";
+  menuBtn.addEventListener("click", () => {
+    const open = navLinks.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.textContent = open ? "✕ Cerrar" : "☰ Menú";
   });
-});
 
-const advice = {
-  slow: [
-    "Cierra las aplicaciones que no estés utilizando.",
-    "Reinicia el equipo si responde con normalidad.",
-    "Revisa el espacio disponible y las actualizaciones pendientes.",
-    "Si continúa lento, registra cuándo ocurre y solicita una revisión técnica.",
-  ],
-  power: [
-    "Comprueba que el tomacorriente funcione y que el cable externo esté bien conectado.",
-    "En una laptop, observa si el cargador muestra algún indicador luminoso.",
-    "No insistas si hay olor, calor anormal o daños visibles.",
-    "Si sigue sin encender, solicita asistencia técnica.",
-  ],
-  wifi: [
-    "Comprueba que el modo avión esté desactivado y que el Wi-Fi esté encendido.",
-    "Verifica si otros dispositivos pueden conectarse a la misma red.",
-    "Si tienes autorización, reinicia el router siguiendo sus indicaciones.",
-    "Si continúa el problema, solicita soporte.",
-  ],
-  screen: [
-    "Comprueba que el equipo esté encendido y revisa el brillo.",
-    "En una PC, verifica que el monitor tenga alimentación y el cable externo esté conectado.",
-    "Si el equipo parece iniciar pero no muestra imagen, solicita revisión técnica.",
-  ],
-  heat: [
-    "Guarda tu trabajo y apaga el equipo si el calentamiento es excesivo.",
-    "Colócalo sobre una superficie firme y despeja las rejillas externas.",
-    "No lo utilices sobre telas ni superficies que bloqueen la ventilación.",
-    "Si vuelve a calentarse o hace ruidos inusuales, solicita revisión técnica.",
-  ],
-  sound: [
-    "Comprueba el volumen y que el sonido no esté silenciado.",
-    "Revisa el dispositivo de salida seleccionado en el sistema.",
-    "Comprueba la conexión de auriculares o altavoces.",
-    "Si no se soluciona, solicita ayuda para revisar el controlador de audio.",
-  ],
-  usb: [
-    "Prueba otro puerto disponible y compatible.",
-    "Comprueba si el dispositivo funciona en otro equipo confiable.",
-    "Si aparece en el sistema, utiliza la opción de expulsión segura antes de retirarlo.",
-    "Si varios puertos fallan, solicita revisión técnica.",
-  ],
-  charge: [
-    "Comprueba el tomacorriente y que el cargador esté conectado correctamente.",
-    "Revisa visualmente que el cable y el adaptador no estén dañados.",
-    "Verifica si el sistema reconoce el adaptador de corriente.",
-    "Si la batería está hinchada, muy caliente o dañada, deja de usar el equipo y solicita asistencia.",
-  ],
-};
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.textContent = "☰ Menú";
+    });
+  });
 
-document.getElementById("symptom").addEventListener("change", (e) => {
-  const box = document.getElementById("diagnosis");
-  box.replaceChildren();
+  const guidance = {
+    slow: {
+      title: "El equipo está lento",
+      intro: "Empieza por las comprobaciones del sistema. No instales herramientas de optimización desconocidas.",
+      laptop: [
+        "Guarda los documentos y cierra las aplicaciones que no estés utilizando.",
+        "Comprueba el espacio disponible desde la configuración de almacenamiento.",
+        "Revisa las actualizaciones del sistema y permite que terminen sin interrumpirlas.",
+        "Si el equipo responde, reinícialo desde el menú del sistema.",
+        "Si continúa lento, anota cuándo ocurre y solicita una revisión."
+      ],
+      desktop: [
+        "Guarda los documentos y cierra las aplicaciones que no estés utilizando.",
+        "Comprueba el espacio disponible en la unidad donde está instalado el sistema.",
+        "Revisa las actualizaciones desde la configuración oficial.",
+        "Reinicia desde el menú del sistema si el equipo responde.",
+        "Si la lentitud continúa, solicita una evaluación antes de borrar archivos o cambiar ajustes avanzados."
+      ],
+      warning: "No elimines carpetas del sistema ni formatees como primera medida."
+    },
+    power: {
+      title: "El equipo no enciende",
+      intro: "Comprueba la alimentación externa sin abrir el equipo.",
+      laptop: [
+        "Comprueba que el tomacorriente funcione.",
+        "Verifica que el cargador sea el adecuado para el modelo y esté conectado correctamente.",
+        "Observa si el cargador o el equipo muestran algún indicador luminoso.",
+        "Si no hay respuesta, registra el modelo y solicita una revisión técnica."
+      ],
+      desktop: [
+        "Comprueba que el tomacorriente funcione.",
+        "Verifica que el cable de alimentación esté firme en el gabinete.",
+        "Comprueba que el monitor tenga alimentación y esté encendido.",
+        "Si no hay respuesta, solicita revisión técnica; no abras la fuente de alimentación."
+      ],
+      warning: "Si hay humo, chispas, olor a quemado o cables dañados, deja de usar el equipo."
+    },
+    wifi: {
+      title: "No hay conexión a Internet",
+      intro: "Determina si el problema afecta solo a tu equipo o a toda la red.",
+      laptop: [
+        "Comprueba que el modo avión esté desactivado.",
+        "Verifica que el Wi-Fi esté encendido y que la red seleccionada sea la correcta.",
+        "Comprueba si otros dispositivos pueden conectarse a esa misma red.",
+        "Si otros dispositivos tampoco conectan, consulta el router o al proveedor."
+      ],
+      desktop: [
+        "Si utilizas cable de red, comprueba que esté conectado en ambos extremos y sin daños.",
+        "Si utilizas Wi-Fi, verifica que esté activado y que la red seleccionada sea la correcta.",
+        "Comprueba si otros dispositivos pueden conectarse a la misma red.",
+        "Si el problema continúa, registra el mensaje de error y solicita soporte."
+      ],
+      warning: "No restablezcas toda la configuración de red si no sabes cómo recuperar los ajustes."
+    },
+    screen: {
+      title: "La pantalla no muestra imagen",
+      intro: "Comprueba primero la alimentación, el brillo y las conexiones externas.",
+      laptop: [
+        "Comprueba que el equipo esté encendido y conectado a la alimentación si la batería está baja.",
+        "Aumenta el brillo con las teclas destinadas a esa función.",
+        "Desconecta temporalmente pantallas externas y comprueba si cambia el comportamiento.",
+        "Si el equipo parece iniciar pero la pantalla sigue negra, solicita diagnóstico técnico."
+      ],
+      desktop: [
+        "Comprueba que el monitor esté conectado a la corriente y encendido.",
+        "Revisa que el cable de video esté firme en ambos extremos y sin daños.",
+        "Selecciona en el monitor la entrada correcta, por ejemplo HDMI o DisplayPort.",
+        "Si aparece 'Sin señal' y el gabinete parece encendido, solicita una revisión."
+      ],
+      warning: "No abras el monitor ni el gabinete para manipular componentes internos."
+    },
+    heat: {
+      title: "El equipo se calienta demasiado",
+      intro: "El calor anormal puede indicar un problema de ventilación o funcionamiento.",
+      laptop: [
+        "Coloca la laptop sobre una superficie firme y despejada.",
+        "Comprueba que las rejillas de ventilación no estén cubiertas.",
+        "Cierra tareas exigentes que no necesites y deja que el equipo se enfríe.",
+        "Si se apaga por temperatura o continúa muy caliente, deja de usarlo y solicita asistencia."
+      ],
+      desktop: [
+        "Comprueba que el gabinete tenga espacio libre alrededor.",
+        "Verifica visualmente que las rejillas externas no estén obstruidas.",
+        "Cierra tareas exigentes que no necesites y observa si vuelve a una temperatura habitual.",
+        "Si persiste, solicita una revisión técnica de la ventilación interna."
+      ],
+      warning: "No introduzcas objetos en las rejillas ni abras el equipo para limpiar ventiladores si no tienes preparación técnica."
+    },
+    sound: {
+      title: "No se escucha el audio",
+      intro: "Revisa el volumen, la salida seleccionada y los dispositivos conectados.",
+      laptop: [
+        "Comprueba que el volumen no esté silenciado.",
+        "Abre la configuración de sonido y verifica que estén seleccionados los altavoces correctos.",
+        "Desconecta auriculares o dispositivos Bluetooth que no estés utilizando.",
+        "Prueba el sonido con otra aplicación."
+      ],
+      desktop: [
+        "Comprueba el volumen del sistema y del monitor o altavoces, si tienen control propio.",
+        "Verifica que los altavoces estén conectados a la salida correcta y tengan alimentación.",
+        "Revisa en la configuración cuál es el dispositivo de salida seleccionado.",
+        "Si no funciona, solicita ayuda para revisar el controlador de audio."
+      ],
+      warning: "No descargues controladores desde páginas desconocidas."
+    },
+    usb: {
+      title: "No reconoce un dispositivo USB",
+      intro: "Comprueba el accesorio y el puerto sin forzar ninguna conexión.",
+      laptop: [
+        "Retira el dispositivo con la opción de expulsión segura si el sistema lo permite.",
+        "Conéctalo de nuevo con cuidado en un puerto compatible.",
+        "Comprueba si el dispositivo funciona en otro equipo confiable.",
+        "Si varios puertos fallan, solicita revisión técnica."
+      ],
+      desktop: [
+        "Retira el dispositivo con la opción de expulsión segura si el sistema lo permite.",
+        "Prueba otro puerto USB compatible, sin forzar el conector.",
+        "Comprueba si el dispositivo funciona en otro equipo confiable.",
+        "Si varios puertos fallan, solicita revisión técnica."
+      ],
+      warning: "No introduzcas objetos metálicos en los puertos ni fuerces conectores doblados."
+    },
+    charge: {
+      title: "La laptop no carga",
+      intro: "Realiza únicamente comprobaciones externas del sistema de alimentación.",
+      laptop: [
+        "Comprueba que el tomacorriente funcione.",
+        "Verifica que el cargador sea el indicado para tu modelo y esté conectado correctamente.",
+        "Observa si el cable, el adaptador o el conector presentan cortes, deformaciones o calor inusual.",
+        "Si el equipo reconoce el cargador pero no carga, consulta el soporte del fabricante."
+      ],
+      desktop: [
+        "La carga de batería corresponde principalmente a laptops. Para una PC de escritorio, selecciona 'No enciende' y revisa la alimentación externa.",
+        "No conectes adaptadores improvisados ni cambies componentes sin asistencia."
+      ],
+      warning: "Si la batería está hinchada, muy caliente o dañada, deja de utilizar el equipo y solicita asistencia."
+    }
+  };
 
-  const items = advice[e.target.value];
+  const symptom = document.getElementById("symptom");
+  const diagnosticDevice = document.getElementById("diagnosticDevice");
+  const result = document.getElementById("diagnosis");
 
-  if (!items) {
-    box.textContent = "Aquí aparecerán las comprobaciones recomendadas.";
-    return;
+  function showDiagnosis() {
+    const selected = symptom.value;
+    const device = diagnosticDevice.value;
+
+    result.replaceChildren();
+    if (!selected || !guidance[selected]) {
+      result.textContent = "Selecciona tu equipo y el síntoma para consultar las comprobaciones recomendadas.";
+      return;
+    }
+
+    const data = guidance[selected];
+    const heading = document.createElement("h3");
+    heading.textContent = data.title;
+    const intro = document.createElement("p");
+    intro.className = "diagnosis-intro";
+    intro.textContent = data.intro;
+    const list = document.createElement("ol");
+
+    data[device].forEach(step => {
+      const item = document.createElement("li");
+      item.textContent = step;
+      list.appendChild(item);
+    });
+
+    const warning = document.createElement("p");
+    warning.className = "diagnosis-warning";
+    const strong = document.createElement("strong");
+    strong.textContent = "Importante: ";
+    warning.append(strong, document.createTextNode(data.warning));
+
+    result.append(heading, intro, list, warning);
   }
 
-  const ol = document.createElement("ol");
+  symptom.addEventListener("change", showDiagnosis);
+  diagnosticDevice.addEventListener("change", showDiagnosis);
 
-  items.forEach((text) => {
-    const li = document.createElement("li");
-    li.textContent = text;
-    ol.appendChild(li);
-  });
-
-  box.append("Comprobaciones iniciales:", ol);
-});
-
-const sections = [...document.querySelectorAll("main section[id]")];
-const links = [...navLinks.querySelectorAll("a")];
-
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
+  const sections = [...document.querySelectorAll("main section[id]")];
+  const links = [...navLinks.querySelectorAll("a")];
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
-          links.forEach((a) => {
-            a.classList.toggle(
-              "active",
-              a.getAttribute("href") === "#" + entry.target.id,
-            );
+          links.forEach(link => {
+            link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
           });
         }
       });
-    },
-    {
-      rootMargin: "-25% 0px -65% 0px",
-    },
-  );
-
-  sections.forEach((section) => observer.observe(section));
-}
+    }, { rootMargin: "-25% 0px -65% 0px" });
+    sections.forEach(section => observer.observe(section));
+  }
+});

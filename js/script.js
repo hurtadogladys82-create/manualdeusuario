@@ -1,4 +1,3 @@
-// Interacciones del manual: menú adaptable, pestañas por equipo y diagnóstico específico.
 document.addEventListener("DOMContentLoaded", () => {
   const deviceTabs = [...document.querySelectorAll(".device-tab")];
 

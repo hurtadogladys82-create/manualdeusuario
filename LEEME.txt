@@ -6,4 +6,4 @@ Para abrir por visual studio code:
 3. Abre index.html con Live Server o directamente en el navegador.
 
 Para abrir la web:
-https://roaring-tapioca-874241.netlify.app
+https://hurtadogladys82-create.github.io/manualdeusuario/

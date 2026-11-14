@@ -1,1100 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <meta content="Manual práctico de mantenimiento preventivo y correctivo para laptops y computadoras de escritorio." name="description"/>
-  <title>
-   Manual de mantenimiento de computadoras
-  </title>
-  <link href="css/style.css" rel="stylesheet"/>
- </head>
- <body>
-  <header id="inicio">
-   <div class="container">
-    <div class="hero">
-     <div>
-      <h1>
-       Cuida tu computadora. Mantén todo en orden.
-      </h1>
-      <p>
-       Aprende a realizar cuidados básicos, reconocer problemas frecuentes y saber cuándo es mejor acudir a un técnico.
-      </p>
-      <div class="hero-actions">
-       <a class="btn primary" href="#preventivo">
-        Explorar la guía
-       </a>
-       <a class="btn ghost" href="#diagnostico">
-        Tengo un problema
-       </a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </header>
-  <nav aria-label="Menú principal">
-   <div class="container navinner">
-    <a class="brand" href="#inicio">
-     MANTENIMIENTO
-     <span>
-      .
-     </span>
-    </a>
-    <button aria-controls="navLinks" aria-expanded="false" class="menu-btn" id="menuBtn">
-     ☰ Menú
-    </button>
-    <div class="navlinks" id="navLinks">
-     <a href="#inicio">
-      Inicio
-     </a>
-     <a href="#seguridad">
-      Seguridad
-     </a>
-     <a href="#preventivo">
-      Preventivo
-     </a>
-     <a href="#correctivo">
-      Correctivo
-     </a>
-     <a href="#diagnostico">
-      Diagnóstico
-     </a>
-     <a href="#rutina">
-      Rutina
-     </a>
-     <a href="#faq">
-      Preguntas frecuentes
-     </a>
-     <a href="#fuentes">
-      Fuentes
-     </a>
-    </div>
-   </div>
-  </nav>
-  <main class="container">
-   <section class="content" id="seguridad">
-    <div class="section-head">
-     <span class="section-no">
-      01 · Antes de comenzar
-     </span>
-     <h2>
-      Seguridad primero
-     </h2>
-     <p>
-      Antes de limpiar o revisar cualquier computadora, prepara el espacio y evita acciones que puedan causar daños eléctricos o físicos.
-     </p>
-    </div>
-    <div class="grid2">
-     <article class="info-card">
-      <span class="pill">
-       Preparación
-      </span>
-      <h3>
-       Prepara el área de trabajo
-      </h3>
-      <p>
-       Utiliza una mesa firme, limpia, seca y bien iluminada. Mantén bebidas y alimentos alejados y organiza los cables para evitar tirones.
-      </p>
-     </article>
-     <article class="info-card">
-      <span class="pill">
-       Protección de datos
-      </span>
-      <h3>
-       Protege tu información
-      </h3>
-      <p>
-       Guarda los documentos abiertos y realiza una copia de seguridad de los archivos importantes antes de cualquier reparación o cambio de configuración.
-      </p>
-     </article>
-    </div>
-    <ol class="steps">
-     <li>
-      <strong>
-       Apaga el equipo
-      </strong>
-      desde el sistema operativo; no lo desconectes mientras está trabajando, salvo que exista una situación de peligro.
-     </li>
-     <li>
-      <strong>
-       Desconecta la alimentación
-      </strong>
-      y los periféricos antes de realizar limpieza externa.
-     </li>
-     <li>
-      <strong>
-       Retira accesorios externos
-      </strong>
-      como memorias USB, discos externos y auriculares.
-     </li>
-     <li>
-      <strong>
-       Consulta el manual del fabricante
-      </strong>
-      para conocer las indicaciones específicas de limpieza y cuidado del modelo.
-     </li>
-    </ol>
-    <div class="notice warning">
-     <strong>
-      Detente si observas señales de riesgo.
-     </strong>
-     <p>
-      Si hay humo, chispas, olor a quemado, líquido dentro del equipo, batería hinchada o calentamiento anormal, deja de utilizarlo y solicita asistencia técnica. No abras la fuente de alimentación ni manipules baterías dañadas.
-     </p>
-    </div>
-   </section>
-   <section class="content" id="preventivo">
-    <div class="section-head">
-     <span class="section-no">
-      02 · Cuidado periódico
-     </span>
-     <h2>
-      Mantenimiento preventivo
-     </h2>
-     <p>
-      Consiste en realizar revisiones y cuidados antes de que aparezca una falla. La frecuencia depende del uso, el ambiente y las recomendaciones del fabricante.
-     </p>
-    </div>
-    <h3 class="subhead">
-     Una rutina básica de mantenimiento
-    </h3>
-    <div class="photo-grid">
-     <article class="photo-card">
-      <img alt="Técnico limpiando el interior de un computador de escritorio" loading="lazy" src="https://images.pexels.com/photos/31854225/pexels-photo-31854225.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"/>
-      <div>
-       <strong>
-        Revisión del equipo
-       </strong>
-       <p>
-        Observa el estado general y comprueba que no existan cables dañados ni rejillas obstruidas.
-       </p>
-      </div>
-     </article>
-     <article class="photo-card">
-      <img alt="Equipo portátil y accesorios sobre una mesa" loading="lazy" src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
-      <div>
-       <strong>
-        Limpieza externa
-       </strong>
-       <p>
-        Utiliza un paño de microfibra. No rocíes líquidos directamente sobre la pantalla o el teclado.
-       </p>
-      </div>
-     </article>
-     <article class="photo-card">
-      <img alt="Limpieza de componentes en el interior de un gabinete de PC" loading="lazy" src="https://images.pexels.com/photos/31854241/pexels-photo-31854241.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"/>
-      <div>
-       <strong>
-        Ventilación
-       </strong>
-       <p>
-        Mantén despejadas las entradas y salidas de aire para favorecer la circulación.
-       </p>
-      </div>
-     </article>
-    </div>
-    <p class="caption">
-     Las fotografías son referencias reales de equipos y tareas de mantenimiento. La limpieza interna mostrada debe realizarla personal con preparación técnica.
-    </p>
-    <h3 class="subhead">
-     Pasos que puede realizar el usuario
-    </h3>
-    <ol class="steps">
-     <li>
-      <strong>
-       Limpieza de la carcasa:
-      </strong>
-      pasa un paño suave y seco o ligeramente humedecido con un producto compatible, siguiendo las instrucciones del fabricante.
-     </li>
-     <li>
-      <strong>
-       Pantalla:
-      </strong>
-      apaga el equipo y utiliza un paño de microfibra limpio. No presiones la superficie ni apliques limpiador directamente.
-     </li>
-     <li>
-      <strong>
-       Teclado y ratón:
-      </strong>
-      retira el polvo superficial con cuidado. Evita introducir líquidos entre las teclas.
-     </li>
-     <li>
-      <strong>
-       Ventilación:
-      </strong>
-      comprueba que las rejillas estén libres de objetos y que el equipo no esté apoyado sobre telas o superficies blandas.
-     </li>
-     <li>
-      <strong>
-       Software:
-      </strong>
-      instala actualizaciones desde las opciones oficiales del sistema y elimina únicamente archivos que reconozcas.
-     </li>
-     <li>
-      <strong>
-       Seguridad:
-      </strong>
-      mantén activadas las herramientas de protección y evita instalar programas de procedencia desconocida.
-     </li>
-     <li>
-      <strong>
-       Respaldo:
-      </strong>
-      conserva copias de documentos importantes en una ubicación segura y comprueba que puedas acceder a ellas.
-     </li>
-    </ol>
-    <div aria-label="Cuidados según el tipo de equipo" class="device-picker">
-     <p>
-      Selecciona tu equipo para consultar sus cuidados específicos.
-     </p>
-     <div aria-label="Tipo de computadora" class="device-tabs" role="tablist">
-      <button aria-controls="panel-laptop" aria-selected="true" class="device-tab" id="tab-laptop" role="tab" type="button">
-       Laptop
-      </button>
-      <button aria-controls="panel-desktop" aria-selected="false" class="device-tab" id="tab-desktop" role="tab" type="button">
-       PC de escritorio
-      </button>
-     </div>
-     <div aria-labelledby="tab-laptop" class="device-panel" id="panel-laptop" role="tabpanel">
-      <img alt="Laptop abierta sobre una mesa" loading="lazy" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"/>
-      <div>
-       <h3>
-        Cuidados para una laptop
-       </h3>
-       <p>
-        Realiza esta rutina con el equipo apagado, frío y desconectado. No requiere abrir la carcasa.
-       </p>
-       <ol class="specific-steps">
-        <li>
-         <strong>
-          Apaga y desconecta:
-         </strong>
-         guarda tus archivos, apaga desde el sistema y retira el cargador y los accesorios.
-        </li>
-        <li>
-         <strong>
-          Limpia la carcasa:
-         </strong>
-         utiliza un paño suave, siguiendo las indicaciones del fabricante. Evita que la humedad entre por las uniones.
-        </li>
-        <li>
-         <strong>
-          Limpia la pantalla:
-         </strong>
-         usa un paño de microfibra limpio y el método recomendado para ese panel. No rocíes líquidos directamente ni presiones.
-        </li>
-        <li>
-         <strong>
-          Retira el polvo superficial:
-         </strong>
-         limpia suavemente el teclado y el panel táctil. No introduzcas objetos entre las teclas.
-        </li>
-        <li>
-         <strong>
-          Revisa la ventilación:
-         </strong>
-         identifica las rejillas y comprueba que estén libres. Utiliza la laptop sobre una superficie firme, no sobre una cama o tela.
-        </li>
-        <li>
-         <strong>
-          Inspecciona el cargador:
-         </strong>
-         observa el cable, el adaptador y el conector. Si están cortados, deformados o se calientan de forma anormal, deja de utilizarlos.
-        </li>
-       </ol>
-       <div class="notice success">
-        <strong>
-         Comprueba el resultado:
-        </strong>
-        <p>
-         La superficie está limpia y seca, las rejillas no están obstruidas y el cargador no presenta daños visibles. Conecta el equipo y verifica su funcionamiento habitual.
-        </p>
-       </div>
-      </div>
-     </div>
-     <div aria-labelledby="tab-desktop" class="device-panel" hidden="" id="panel-desktop" role="tabpanel">
-      <img alt="Computadora de escritorio con gabinete y componentes" loading="lazy" src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"/>
-      <div>
-       <h3>
-        Cuidados para una PC de escritorio
-       </h3>
-       <p>
-        La PC está formada por varios dispositivos. Revisa el gabinete, el monitor y los periféricos por separado.
-       </p>
-       <ol class="specific-steps">
-        <li>
-         <strong>
-          Apaga y desconecta:
-         </strong>
-         apaga desde el sistema operativo y desconecta el cable de alimentación y los periféricos externos.
-        </li>
-        <li>
-         <strong>
-          Limpia el gabinete:
-         </strong>
-         pasa un paño suave por las superficies exteriores. No introduzcas objetos por las rejillas ni abras la fuente de alimentación.
-        </li>
-        <li>
-         <strong>
-          Limpia el monitor:
-         </strong>
-         sigue las indicaciones del fabricante y utiliza un paño compatible. No rocíes líquidos directamente sobre la pantalla.
-        </li>
-        <li>
-         <strong>
-          Limpia teclado y ratón:
-         </strong>
-         retira el polvo superficial con cuidado y evita que entre humedad en los dispositivos.
-        </li>
-        <li>
-         <strong>
-          Comprueba la ventilación:
-         </strong>
-         deja espacio alrededor del gabinete y verifica que las rejillas externas no estén cubiertas.
-        </li>
-        <li>
-         <strong>
-          Revisa las conexiones:
-         </strong>
-         observa los cables de alimentación, video y periféricos. Ordénalos sin tensarlos ni doblarlos en exceso.
-        </li>
-       </ol>
-       <div class="notice success">
-        <strong>
-         Comprueba el resultado:
-        </strong>
-        <p>
-         El gabinete y los periféricos están limpios, las rejillas despejadas y los cables sin daños visibles. Reconecta todo y verifica monitor, teclado y ratón.
-        </p>
-       </div>
-      </div>
-     </div>
-    </div>
-    <h3 class="subhead">
-     Mantenimiento del software
-    </h3>
-    <div class="grid2 software-guides">
-     <article class="info-card">
-      <span class="pill">
-       Actualizaciones
-      </span>
-      <h3>
-       Mantén el sistema actualizado
-      </h3>
-      <p>
-       Abre la configuración del sistema operativo y consulta la sección de actualizaciones. Lee las indicaciones, conecta el equipo a la alimentación cuando corresponda y no interrumpas una actualización en curso.
-      </p>
-     </article>
-     <article class="info-card">
-      <span class="pill">
-       Almacenamiento
-      </span>
-      <h3>
-       Revisa el espacio disponible
-      </h3>
-      <p>
-       Consulta el almacenamiento desde la configuración. Elimina únicamente archivos personales que reconozcas y que ya no necesites. No borres carpetas del sistema.
-      </p>
-     </article>
-     <article class="info-card">
-      <span class="pill">
-       Copias de seguridad
-      </span>
-      <h3>
-       Respalda tus documentos
-      </h3>
-      <p>
-       Guarda los archivos importantes en una ubicación adicional, como una unidad externa o un servicio de almacenamiento confiable. Comprueba que puedas abrir la copia.
-      </p>
-     </article>
-     <article class="info-card">
-      <span class="pill">
-       Seguridad
-      </span>
-      <h3>
-       Evita programas desconocidos
-      </h3>
-      <p>
-       Descarga aplicaciones desde sitios oficiales o tiendas confiables. Mantén activa la protección del sistema y desconfía de ventanas que prometen acelerar o reparar todo automáticamente.
-      </p>
-     </article>
-    </div>
-    <div class="notice success">
-     <strong>
-      ¿Cómo saber si la rutina se completó?
-     </strong>
-     <p>
-      El equipo queda limpio externamente, las rejillas están despejadas, las actualizaciones están revisadas, los archivos importantes tienen respaldo y los periféricos funcionan correctamente.
-     </p>
-    </div>
-   </section>
-   <section class="content" id="correctivo">
-    <div class="section-head">
-     <span class="section-no">
-      03 · Atención de fallas
-     </span>
-     <h2>
-      Mantenimiento correctivo
-     </h2>
-     <p>
-      Se aplica cuando el equipo presenta un problema. La primera tarea no es desmontarlo, sino identificar el síntoma y comprobar las causas externas más sencillas.
-     </p>
-    </div>
-    <div class="flow">
-     <article>
-      <b>
-       1
-      </b>
-      <strong>
-       Identifica
-      </strong>
-      <p>
-       Describe qué ocurre y cuándo comenzó.
-      </p>
-     </article>
-     <article>
-      <b>
-       2
-      </b>
-      <strong>
-       Comprueba
-      </strong>
-      <p>
-       Revisa alimentación, conexiones y ajustes.
-      </p>
-     </article>
-     <article>
-      <b>
-       3
-      </b>
-      <strong>
-       Evalúa
-      </strong>
-      <p>
-       Verifica si la comprobación resolvió la falla.
-      </p>
-     </article>
-     <article>
-      <b>
-       4
-      </b>
-      <strong>
-       Deriva
-      </strong>
-      <p>
-       Solicita soporte si requiere intervención técnica.
-      </p>
-     </article>
-    </div>
-    <h3 class="subhead">
-     Procedimiento general
-    </h3>
-    <ol class="steps">
-     <li>
-      <strong>
-       Registra el síntoma:
-      </strong>
-      anota el mensaje de error, cuándo aparece y qué actividad realizabas.
-     </li>
-     <li>
-      <strong>
-       Comprueba las conexiones externas:
-      </strong>
-      verifica que los cables estén conectados correctamente y que no presenten daños visibles.
-     </li>
-     <li>
-      <strong>
-       Revisa los ajustes:
-      </strong>
-      comprueba brillo, volumen, conexión Wi-Fi y selección de pantalla o dispositivo de audio.
-     </li>
-     <li>
-      <strong>
-       Reinicia de forma segura:
-      </strong>
-      si el equipo responde y no hay señales de riesgo, reinícialo desde el sistema operativo.
-     </li>
-     <li>
-      <strong>
-       Comprueba el resultado:
-      </strong>
-      verifica si la falla desapareció y registra cualquier cambio.
-     </li>
-     <li>
-      <strong>
-       Solicita asistencia:
-      </strong>
-      si persiste, requiere abrir el equipo, sustituir piezas o intervenir componentes internos.
-     </li>
-    </ol>
-    <h3 class="subhead">
-     Problemas habituales: qué revisar primero
-    </h3>
-    <div class="grid2 fault-guides">
-     <article class="info-card">
-      <span class="pill">
-       No enciende
-      </span>
-      <h3>
-       Comprueba la alimentación
-      </h3>
-      <ol>
-       <li>
-        Verifica que el tomacorriente funcione.
-       </li>
-       <li>
-        Revisa que el cargador o cable esté bien conectado y sin daños.
-       </li>
-       <li>
-        En PC, comprueba también la conexión del monitor y del gabinete.
-       </li>
-       <li>
-        Si no responde, solicita revisión técnica.
-       </li>
-      </ol>
-      <p>
-       <strong>
-        Detente:
-       </strong>
-       si hay humo, chispas, olor a quemado o cable deteriorado.
-      </p>
-     </article>
-     <article class="info-card">
-      <span class="pill">
-       Equipo lento
-      </span>
-      <h3>
-       Revisa el funcionamiento
-      </h3>
-      <ol>
-       <li>
-        Guarda tu trabajo y cierra aplicaciones que no utilices.
-       </li>
-       <li>
-        Comprueba el espacio disponible.
-       </li>
-       <li>
-        Revisa actualizaciones desde la configuración oficial.
-       </li>
-       <li>
-        Reinicia desde el sistema si el equipo responde.
-       </li>
-      </ol>
-      <p>
-       <strong>
-        Evita:
-       </strong>
-       borrar carpetas del sistema o instalar optimizadores desconocidos.
-      </p>
-     </article>
-     <article class="info-card">
-      <span class="pill">
-       Sin imagen
-      </span>
-      <h3>
-       Comprueba la pantalla
-      </h3>
-      <ol>
-       <li>
-        En PC, verifica que el monitor esté encendido.
-       </li>
-       <li>
-        Comprueba que el cable de video esté firme.
-       </li>
-       <li>
-        Selecciona la entrada correcta en el monitor.
-       </li>
-       <li>
-        En laptop, revisa el brillo y desconecta pantallas externas.
-       </li>
-      </ol>
-      <p>
-       Si persiste, solicita diagnóstico técnico.
-      </p>
-     </article>
-     <article class="info-card">
-      <span class="pill">
-       Sin Internet
-      </span>
-      <h3>
-       Comprueba la conexión
-      </h3>
-      <ol>
-       <li>
-        Desactiva el modo avión y activa el Wi-Fi.
-       </li>
-       <li>
-        Verifica que seleccionaste la red correcta.
-       </li>
-       <li>
-        Comprueba si otros dispositivos se conectan.
-       </li>
-       <li>
-        Si ninguno conecta, consulta el router o proveedor.
-       </li>
-      </ol>
-      <p>
-       No cambies ajustes avanzados sin saber cómo restaurarlos.
-      </p>
-     </article>
-     <article class="info-card">
-      <span class="pill">
-       Sobrecalentamiento
-      </span>
-      <h3>
-       Revisa la ventilación
-      </h3>
-      <ol>
-       <li>
-        Coloca el equipo sobre una superficie firme.
-       </li>
-       <li>
-        Comprueba que las rejillas estén despejadas.
-       </li>
-       <li>
-        Cierra tareas exigentes y deja que se enfríe.
-       </li>
-       <li>
-        Si vuelve a calentarse de forma anormal, deja de usarlo y pide asistencia.
-       </li>
-      </ol>
-      <p>
-       No introduzcas objetos en las rejillas.
-      </p>
-     </article>
-     <article class="info-card">
-      <span class="pill">
-       Teclado o ratón
-      </span>
-      <h3>
-       Comprueba los periféricos
-      </h3>
-      <ol>
-       <li>
-        Verifica la conexión USB.
-       </li>
-       <li>
-        Prueba otro puerto compatible.
-       </li>
-       <li>
-        En dispositivos inalámbricos, revisa el interruptor y la batería.
-       </li>
-       <li>
-        Si el conector está dañado, no lo fuerces.
-       </li>
-      </ol>
-      <p>
-       Si falla el teclado integrado, solicita revisión.
-      </p>
-     </article>
-    </div>
-    <h3 class="subhead">
-     Resumen por tipo de falla
-    </h3>
-    <div class="table-wrap">
-     <table>
-      <thead>
-       <tr>
-        <th>
-         Tipo de falla
-        </th>
-        <th>
-         Ejemplos
-        </th>
-        <th>
-         Comprobación inicial
-        </th>
-       </tr>
-      </thead>
-      <tbody>
-       <tr>
-        <td>
-         Software
-        </td>
-        <td>
-         Programa bloqueado, lentitud o errores tras una actualización.
-        </td>
-        <td>
-         Cerrar la aplicación si responde, reiniciar y revisar actualizaciones o espacio disponible.
-        </td>
-       </tr>
-       <tr>
-        <td>
-         Conectividad
-        </td>
-        <td>
-         Wi-Fi desconectado o periférico que no se reconoce.
-        </td>
-        <td>
-         Comprobar ajustes, cableado y probar otro puerto compatible.
-        </td>
-       </tr>
-       <tr>
-        <td>
-         Alimentación
-        </td>
-        <td>
-         El equipo no enciende o la laptop no carga.
-        </td>
-        <td>
-         Revisar tomacorriente, cargador y conexiones externas sin manipular partes dañadas.
-        </td>
-       </tr>
-       <tr>
-        <td>
-         Hardware
-        </td>
-        <td>
-         Pantalla dañada, ruido inusual o teclado que no responde.
-        </td>
-        <td>
-         Evitar desmontar el equipo y solicitar revisión técnica.
-        </td>
-       </tr>
-      </tbody>
-     </table>
-    </div>
-    <div class="notice warning">
-     <strong>
-      Antes de formatear o restaurar:
-     </strong>
-     <p>
-      Haz una copia de seguridad y confirma que esa acción sea necesaria. Formatear no es una solución universal y puede provocar la pérdida de información.
-     </p>
-    </div>
-   </section>
-   <section class="content" id="diagnostico">
-    <div class="section-head">
-     <span class="section-no">
-      04 · Orientación rápida
-     </span>
-     <h2>
-      Guía de diagnóstico inicial
-     </h2>
-     <p>
-      Selecciona el síntoma que presenta tu equipo. Encontrarás comprobaciones externas y seguras para orientar la revisión.
-     </p>
-    </div>
-    <div class="diagnosis">
-     <div class="diagnosis-fields">
-      <div>
-       <label for="diagnosticDevice">
-        ¿Qué equipo utilizas?
-       </label>
-       <select id="diagnosticDevice">
-        <option value="laptop">
-         Laptop
-        </option>
-        <option value="desktop">
-         PC de escritorio
-        </option>
-       </select>
-      </div>
-      <div>
-       <label for="symptom">
-        ¿Qué problema observas?
-       </label>
-       <select id="symptom">
-        <option value="">
-         Selecciona una falla…
-        </option>
-        <option value="slow">
-         El equipo está lento
-        </option>
-        <option value="power">
-         No enciende
-        </option>
-        <option value="wifi">
-         No se conecta a Wi-Fi
-        </option>
-        <option value="screen">
-         La pantalla no muestra imagen
-        </option>
-        <option value="heat">
-         Se calienta demasiado
-        </option>
-        <option value="sound">
-         No se escucha el audio
-        </option>
-        <option value="usb">
-         No reconoce un dispositivo USB
-        </option>
-        <option value="charge">
-         La laptop no carga
-        </option>
-       </select>
-      </div>
-     </div>
-     <div aria-live="polite" class="result" id="diagnosis">
-      Selecciona tu equipo y el síntoma para consultar las comprobaciones recomendadas.
-     </div>
-    </div>
-   </section>
-   <section class="content" id="rutina">
-    <div class="section-head">
-     <span class="section-no">
-      05 · Organización
-     </span>
-     <h2>
-      Rutina de mantenimiento
-     </h2>
-     <p>
-      Utiliza esta tabla como referencia. La frecuencia real depende del uso, el ambiente y las indicaciones del fabricante.
-     </p>
-    </div>
-    <div class="table-wrap">
-     <table>
-      <thead>
-       <tr>
-        <th>
-         Actividad
-        </th>
-        <th>
-         Qué debes revisar
-        </th>
-        <th>
-         Frecuencia orientativa
-        </th>
-       </tr>
-      </thead>
-      <tbody>
-       <tr>
-        <td>
-         Limpieza externa
-        </td>
-        <td>
-         Pantalla, carcasa, teclado y periféricos.
-        </td>
-        <td>
-         Cuando se acumule suciedad.
-        </td>
-       </tr>
-       <tr>
-        <td>
-         Ventilación
-        </td>
-        <td>
-         Rejillas libres y superficie de apoyo despejada.
-        </td>
-        <td>
-         Revisión periódica.
-        </td>
-       </tr>
-       <tr>
-        <td>
-         Cables y cargador
-        </td>
-        <td>
-         Cortes, deformaciones y conectores flojos.
-        </td>
-        <td>
-         Revisión periódica.
-        </td>
-       </tr>
-       <tr>
-        <td>
-         Actualizaciones
-        </td>
-        <td>
-         Actualizaciones disponibles del sistema.
-        </td>
-        <td>
-         Regularmente.
-        </td>
-       </tr>
-       <tr>
-        <td>
-         Copia de seguridad
-        </td>
-        <td>
-         Que los archivos importantes estén respaldados y accesibles.
-        </td>
-        <td>
-         Según los cambios de tus archivos.
-        </td>
-       </tr>
-      </tbody>
-     </table>
-    </div>
-    <div class="notice">
-     <strong>
-      Ten presente:
-     </strong>
-     <p>
-      No existe una frecuencia única para todos los equipos. En ambientes con polvo o uso intensivo, puede ser necesario revisar con mayor frecuencia. Las tareas internas deben quedar a cargo de personal capacitado.
-     </p>
-    </div>
-   </section>
-   <section class="content" id="faq">
-    <div class="section-head">
-     <span class="section-no">
-      06 · Dudas habituales
-     </span>
-     <h2>
-      Preguntas frecuentes
-     </h2>
-     <p>
-      Respuestas directas para resolver dudas comunes sobre el cuidado de los equipos.
-     </p>
-    </div>
-    <details>
-     <summary>
-      ¿Cada cuánto tiempo debo realizar mantenimiento preventivo?
-     </summary>
-     <p>
-      Depende del uso y del ambiente. Revisa periódicamente la limpieza externa, ventilación, actualizaciones y copias de seguridad. En espacios con mucho polvo o uso intensivo, las revisiones pueden necesitar mayor frecuencia.
-     </p>
-    </details>
-    <details>
-     <summary>
-      ¿Puedo limpiar la pantalla con cualquier producto?
-     </summary>
-     <p>
-      No. Utiliza un paño de microfibra y sigue las indicaciones del fabricante. Evita productos abrasivos, aplicar líquidos directamente o ejercer presión sobre el panel.
-     </p>
-    </details>
-    <details>
-     <summary>
-      ¿Debo apagar y desconectar el equipo antes de limpiarlo?
-     </summary>
-     <p>
-      Sí. Apágalo completamente y desconecta el cargador o cable de alimentación y los periféricos antes de realizar la limpieza externa.
-     </p>
-    </details>
-    <details>
-     <summary>
-      ¿Cuál es la diferencia entre mantenimiento preventivo y correctivo?
-     </summary>
-     <p>
-      El preventivo reúne acciones periódicas para reducir la posibilidad de fallas. El correctivo se realiza cuando ya existe un problema y se busca identificarlo y solucionarlo.
-     </p>
-    </details>
-    <details>
-     <summary>
-      ¿Qué hago si mi computadora está muy lenta?
-     </summary>
-     <p>
-      Cierra programas que no utilizas, revisa el espacio disponible y comprueba si hay actualizaciones pendientes. Si la lentitud continúa, registra cuándo ocurre y solicita una revisión técnica.
-     </p>
-    </details>
-    <details>
-     <summary>
-      ¿Puedo abrir mi laptop o el gabinete para quitar el polvo?
-     </summary>
-     <p>
-      Si no tienes preparación técnica, no abras el equipo ni manipules componentes internos. Una intervención incorrecta puede causar daños. Solicita apoyo de personal capacitado.
-     </p>
-    </details>
-    <details>
-     <summary>
-      ¿Qué debo hacer si se derrama líquido sobre el equipo?
-     </summary>
-     <p>
-      Deja de utilizarlo. Desconéctalo únicamente si puedes hacerlo sin exponerte a un riesgo. No intentes encenderlo para comprobar si funciona y solicita asistencia técnica.
-     </p>
-    </details>
-    <details>
-     <summary>
-      ¿Por qué son importantes las copias de seguridad?
-     </summary>
-     <p>
-      Permiten conservar documentos y archivos importantes si ocurre una falla, se pierde el acceso al equipo o es necesario realizar una reparación.
-     </p>
-    </details>
-    <details>
-     <summary>
-      ¿Cuándo debo acudir a un técnico?
-     </summary>
-     <p>
-      Cuando la falla continúa después de las comprobaciones básicas, se requiere abrir el equipo o aparecen señales como humo, chispas, olor a quemado, batería hinchada o calentamiento anormal.
-     </p>
-    </details>
-   </section>
-   <section class="content" id="fuentes">
-    <div class="section-head">
-     <span class="section-no">
-      07 · Para profundizar
-     </span>
-     <h2>
-      Recomendaciones y fuentes
-     </h2>
-     <p>
-      Los procedimientos pueden variar según la marca y el modelo. Para instrucciones específicas, consulta siempre la documentación oficial del fabricante.
-     </p>
-    </div>
-    <ul>
-     <li>
-      <a href="https://support.microsoft.com/es-es" rel="noopener" target="_blank">
-       Soporte de Microsoft
-      </a>
-      — actualizaciones, seguridad y solución de problemas de Windows.
-     </li>
-     <li>
-      <a href="https://www.dell.com/support/home/es-es" rel="noopener" target="_blank">
-       Soporte de Dell
-      </a>
-      — manuales y diagnóstico de equipos Dell.
-     </li>
-     <li>
-      <a href="https://support.hp.com/es-es" rel="noopener" target="_blank">
-       Soporte de HP
-      </a>
-      — mantenimiento y asistencia para equipos HP.
-     </li>
-     <li>
-      <a href="https://support.apple.com/es-es" rel="noopener" target="_blank">
-       Soporte de Apple
-      </a>
-      — limpieza y cuidado de Mac.
-     </li>
-    </ul>
-    <h3 class="subhead">
-     Créditos fotográficos
-    </h3>
-    <ul class="small">
-     <li>
-      <a href="https://www.pexels.com/" rel="noopener" target="_blank">
-       Pexels
-      </a>
-     </li>
-     <li>
-      <a href="https://unsplash.com/" rel="noopener" target="_blank">
-       Unsplash
-      </a>
-     </li>
-    </ul>
-    <div class="notice success">
-     <strong>
-      Para recordar:
-     </strong>
-     <p>
-      Un buen mantenimiento no consiste en desmontar el equipo constantemente. Consiste en prevenir, observar, cuidar la información y reconocer cuándo es necesario acudir a un profesional.
-     </p>
-    </div>
-   </section>
-  </main>
-  <footer>
-   <div class="container">
-    <div>
-     <strong>
-      Manual de mantenimiento de computadoras
-     </strong>
-     <p>
-      Sistemas Operativos · UNEFA
-     </p>
-    </div>
-    <div>
-     <p>
-      Elaborado por Gladys Hurtado
-     </p>
-     <p>
-     </p>
-    </div>
-   </div>
-  </footer>
-  <script defer="" src="js/script.js">
-  </script>
- </body>
-</html>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Manual práctico de mantenimiento preventivo y correctivo para laptops y computadoras de escritorio.">
+<title>Manual de mantenimiento de computadoras</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<header id="inicio"><div class="container"><div class="hero"><div><h1>Cuida tu computadora. Mantén todo en orden.</h1><p>Aprende a cuidar tu laptop o tu PC de escritorio, a reconocer los problemas más comunes y a saber cuándo conviene llevarla a un técnico.</p><div class="hero-actions"><a class="btn primary" href="#preventivo">Explorar la guía</a><a class="btn ghost" href="#diagnostico">Tengo un problema</a></div></div></div></div></header>
+<nav aria-label="Menú principal"><div class="container navinner"><a class="brand" href="#inicio">MANTENIMIENTO<span>.</span></a><button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menú</button><div class="navlinks" id="navLinks"><a href="#inicio">Inicio</a><a href="#seguridad">Seguridad</a><a href="#materiales">Materiales</a><a href="#preventivo">Preventivo</a><a href="#correctivo">Correctivo</a><a href="#diagnostico">Diagnóstico</a><a href="#rutina">Rutina</a><a href="#faq">Preguntas</a><a href="#glosario">Glosario</a><a href="#fuentes">Fuentes</a></div></div></nav>
+<main class="container">
 
+<section class="content" id="seguridad"><div class="section-head"><span class="section-no">01 · Antes de comenzar</span><h2>Seguridad primero</h2><p>Antes de limpiar o revisar cualquier equipo, prepara el lugar y evita lo que pueda causar un daño eléctrico o físico.</p></div>
+<div class="grid2"><article class="info-card"><span class="pill">Preparación</span><h3>Prepara el área de trabajo</h3><p>Usa una mesa firme, limpia, seca y bien iluminada. Mantén lejos las bebidas y la comida, y ordena los cables para no tropezar con ellos ni jalarlos.</p></article><article class="info-card"><span class="pill">Protección de datos</span><h3>Protege tu información</h3><p>Guarda los documentos que tengas abiertos y haz una copia de seguridad de los archivos importantes antes de cualquier reparación o cambio de configuración.</p></article></div>
+<ol class="steps"><li><strong>Apaga el equipo</strong> desde el sistema operativo. No lo desconectes mientras trabaja, salvo que haya peligro.</li><li><strong>Desconecta la alimentación</strong> y los periféricos antes de hacer la limpieza externa.</li><li><strong>Retira lo que esté conectado:</strong> memorias USB, discos externos, auriculares.</li><li><strong>Consulta el manual del fabricante</strong> para ver las indicaciones de limpieza de tu modelo.</li></ol>
+<div class="notice warning"><strong>Detente si ves señales de riesgo.</strong><p>Humo, chispas, olor a quemado, líquido dentro del equipo, batería hinchada o un calentamiento fuera de lo normal: deja de usarlo y llévalo a un técnico. No abras la fuente de alimentación ni toques una batería dañada.</p></div></section>
+
+<section class="content" id="materiales"><div class="section-head"><span class="section-no">02 · Lo que necesitas</span><h2>Materiales y herramientas</h2><p>Para el mantenimiento externo basta con muy poco. La tabla separa lo que puede usar cualquier persona de lo que solo debe usar un técnico.</p></div>
+<div class="table-wrap wide"><table><thead><tr><th>Material</th><th>Para qué sirve</th><th>Cómo usarlo</th><th>Quién</th></tr></thead><tbody>
+<tr><td>Paño de microfibra limpio y seco</td><td>Pantalla, carcasa y teclado.</td><td>Pásalo con movimientos suaves y sin presionar. Lávalo cuando acumule grasa.</td><td>Usuario</td></tr>
+<tr><td>Agua o el limpiador que indique el fabricante</td><td>Quitar manchas que el paño seco no saca.</td><td>Humedece apenas el paño. Nunca apliques el líquido directo sobre el equipo.</td><td>Usuario</td></tr>
+<tr><td>Alcohol isopropílico al 70 %</td><td>Carcasa, teclas y ratón.</td><td>Solo si el fabricante lo permite, y aplicado al paño. En pantallas, mejor evitarlo.</td><td>Usuario</td></tr>
+<tr><td>Aire comprimido en lata</td><td>Polvo del teclado y de las rejillas por fuera.</td><td>Con el equipo apagado, lata en vertical, ráfagas cortas desde unos 10 a 15 cm.</td><td>Usuario</td></tr>
+<tr><td>Brocha o cepillo suave</td><td>Polvo entre las teclas y en las rejillas.</td><td>Barre sin presionar y en una sola dirección.</td><td>Usuario</td></tr>
+<tr><td>Hisopos de algodón</td><td>Bordes y huecos entre teclas.</td><td>Apenas humedecidos; que no goteen.</td><td>Usuario</td></tr>
+<tr><td>Linterna</td><td>Ver el polvo en rejillas y puertos.</td><td>Alumbra de lado para que se note la suciedad.</td><td>Usuario</td></tr>
+<tr><td>Cintas de velcro o amarres</td><td>Ordenar los cables.</td><td>Sin apretar ni doblarlos en ángulo cerrado.</td><td>Usuario</td></tr>
+<tr><td>Destornilladores de precisión, pulsera antiestática, pasta térmica</td><td>Abrir el equipo y limpiar o cambiar piezas internas.</td><td>No hacen falta para este manual. Abrir el equipo puede afectar la garantía.</td><td>Técnico</td></tr>
+</tbody></table></div>
+<div class="notice warning"><strong>Qué no usar</strong><p>Papel de cocina o servilletas (rayan), limpiavidrios con amoníaco, solventes como la acetona, aerosoles aplicados directo, agua en exceso y aspiradoras comunes dentro del equipo (pueden generar electricidad estática).</p></div></section>
+
+<section class="content" id="preventivo"><div class="section-head"><span class="section-no">03 · Cuidado periódico</span><h2>Mantenimiento preventivo</h2><p>Son los cuidados que se hacen antes de que aparezca una falla. Qué tan seguido hacerlos depende de cuánto uses el equipo y del lugar donde esté; en la sección <a href="#rutina">Rutina</a> hay una tabla con frecuencias.</p></div>
+<h3 class="subhead">Una rutina básica de mantenimiento</h3><div class="photo-grid">
+<article class="photo-card"><img class="diagram" src="img/revision-laptop.svg" alt="Esquema de una laptop con cinco puntos a revisar: pantalla, teclado, rejillas, puertos y cargador" loading="lazy"><div><strong>Revisión del equipo</strong><p>Mira los cinco puntos del esquema. Una linterna ayuda a ver el polvo en las rejillas y los puertos.</p></div></article>
+<article class="photo-card"><img class="diagram" src="img/limpiar-pantalla.svg" alt="Esquema que muestra cómo limpiar la pantalla con un paño húmedo y por qué no se debe rociar líquido directamente" loading="lazy"><div><strong>Limpieza de la pantalla</strong><p>Humedece el paño de microfibra, no la pantalla, y pásalo en una sola dirección.</p></div></article>
+<article class="photo-card"><img class="diagram" src="img/ventilacion-pc.svg" alt="Esquema de un gabinete de PC con el aire entrando por el frente, saliendo por atrás y arriba, y unos 10 centímetros libres a cada lado" loading="lazy"><div><strong>Ventilación</strong><p>El aire necesita entrar y salir. Deja unos 10 cm libres alrededor de las rejillas.</p></div></article>
+</div><p class="caption">Esquemas hechos para este manual. Las fotografías de los equipos completos son de Unsplash.</p>
+<h3 class="subhead">Pasos que puede hacer el usuario</h3><ol class="steps"><li><strong>Carcasa:</strong> pasa un paño suave y seco, o apenas húmedo con un producto compatible, siguiendo las indicaciones del fabricante.</li><li><strong>Pantalla:</strong> con el equipo apagado, usa un paño de microfibra limpio. No presiones ni apliques el limpiador directo.</li><li><strong>Teclado y ratón:</strong> quita el polvo de la superficie con cuidado y evita que entren líquidos entre las teclas.</li><li><strong>Ventilación:</strong> verifica que las rejillas estén libres y que el equipo no esté apoyado sobre telas o superficies blandas.</li><li><strong>Software:</strong> instala las actualizaciones desde las opciones oficiales del sistema y borra solo los archivos que reconozcas.</li><li><strong>Seguridad:</strong> mantén activa la protección del sistema y no instales programas de origen desconocido.</li><li><strong>Respaldo:</strong> guarda copias de tus documentos importantes en otro lugar y comprueba que puedas abrirlas.</li></ol>
+<div class="device-picker" aria-label="Cuidados según el tipo de equipo"><p>Elige tu equipo para ver los cuidados que le corresponden.</p><div class="device-tabs" role="tablist" aria-label="Tipo de computadora"><button class="device-tab" id="tab-laptop" type="button" role="tab" aria-selected="true" aria-controls="panel-laptop">Laptop</button><button class="device-tab" id="tab-desktop" type="button" role="tab" aria-selected="false" aria-controls="panel-desktop">PC de escritorio</button></div><div class="device-panel" id="panel-laptop" role="tabpanel" aria-labelledby="tab-laptop">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1100&q=85" alt="Laptop abierta sobre una mesa" loading="lazy">
+<div><h3>Cuidados para una laptop</h3><p>Hazlo con el equipo apagado, frío y desconectado. No hace falta abrir la carcasa.</p>
+<ol class="specific-steps">
+<li><strong>Apaga y desconecta:</strong> guarda tus archivos, apaga desde el sistema y retira el cargador y los accesorios.</li>
+<li><strong>Limpia la carcasa:</strong> usa un paño suave según las indicaciones del fabricante. Que no entre humedad por las uniones.</li>
+<li><strong>Limpia la pantalla:</strong> paño de microfibra limpio y el método recomendado para ese panel. No rocíes líquidos directo ni presiones.</li>
+<li><strong>Quita el polvo de la superficie:</strong> pasa una brocha suave por el teclado y el panel táctil. No metas objetos entre las teclas.</li>
+<li><strong>Revisa la ventilación:</strong> ubica las rejillas y comprueba que estén libres. Usa la laptop sobre una superficie firme, no sobre la cama ni sobre telas.</li>
+<li><strong>Inspecciona el cargador:</strong> mira el cable, el adaptador y el conector. Si hay cortes, deformaciones o se calientan de más, deja de usarlos.</li>
+</ol>
+<div class="notice success"><strong>Comprueba el resultado:</strong><p>La superficie queda limpia y seca, las rejillas despejadas y el cargador sin daños visibles. Conéctala y verifica que funcione como siempre.</p></div>
+</div></div>
+<div class="device-panel" id="panel-desktop" role="tabpanel" aria-labelledby="tab-desktop" hidden>
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1100&q=85" alt="Computadora de escritorio con gabinete y componentes" loading="lazy">
+<div><h3>Cuidados para una PC de escritorio</h3><p>Una PC de escritorio son varios dispositivos juntos. Revisa el gabinete, el monitor y los periféricos por separado.</p>
+<ol class="specific-steps">
+<li><strong>Apaga y desconecta:</strong> apaga desde el sistema operativo y desconecta el cable de alimentación y los periféricos.</li>
+<li><strong>Limpia el gabinete:</strong> pasa un paño suave por fuera. No metas objetos por las rejillas ni abras la fuente de alimentación.</li>
+<li><strong>Limpia el monitor:</strong> sigue las indicaciones del fabricante y usa un paño compatible. No rocíes líquidos directo sobre la pantalla.</li>
+<li><strong>Limpia teclado y ratón:</strong> quita el polvo de la superficie con cuidado y evita que les entre humedad.</li>
+<li><strong>Comprueba la ventilación:</strong> deja espacio alrededor del gabinete (unos 10 cm) y verifica que las rejillas externas no estén tapadas.</li>
+<li><strong>Revisa las conexiones:</strong> mira los cables de corriente, de video y de los periféricos. Ordénalos sin tensarlos ni doblarlos de más.</li>
+</ol>
+<div class="notice success"><strong>Comprueba el resultado:</strong><p>El gabinete y los periféricos están limpios, las rejillas despejadas y los cables sin daños visibles. Reconecta todo y prueba el monitor, el teclado y el ratón.</p></div>
+</div></div></div><h3 class="subhead">Mantenimiento del software</h3>
+<div class="grid2 software-guides">
+<article class="info-card"><span class="pill">Actualizaciones</span><h3>Mantén el sistema al día</h3><p>Abre la configuración del sistema operativo y entra en la sección de actualizaciones. Lee lo que va a instalar, conecta el equipo a la corriente si hace falta y no interrumpas una actualización en curso.</p></article>
+<article class="info-card"><span class="pill">Almacenamiento</span><h3>Vigila el espacio disponible</h3><p>Mira cuánto espacio queda desde la configuración de almacenamiento y trata de dejar libre al menos el 15 % de la unidad. Elimina solo archivos personales que reconozcas y no toques las carpetas del sistema.</p></article>
+<article class="info-card"><span class="pill">Copias de seguridad</span><h3>Respalda tus documentos</h3><p>Guarda los archivos importantes en otro lugar, como una unidad externa o un servicio de almacenamiento en la nube. Abre alguno de vez en cuando para confirmar que la copia sirve.</p></article>
+<article class="info-card"><span class="pill">Seguridad</span><h3>Desconfía de lo desconocido</h3><p>Descarga programas solo de sitios oficiales o de tiendas confiables. Deja activa la protección del sistema y no hagas caso a ventanas que prometen “acelerar” o “reparar” todo con un clic.</p></article>
+</div>
+<div class="notice success"><strong>¿Cómo sé que terminé la rutina?</strong><p>El equipo está limpio por fuera, las rejillas libres, las actualizaciones revisadas, tus archivos importantes tienen copia y los periféricos funcionan.</p></div>
+</section>
+
+<section class="content" id="correctivo"><div class="section-head"><span class="section-no">04 · Atención de fallas</span><h2>Mantenimiento correctivo</h2><p>Se hace cuando el equipo ya falló. Lo primero no es abrirlo, sino anotar qué pasa y revisar las causas externas más simples: cables, corriente y ajustes.</p></div>
+<div class="flow"><article><b>1</b><strong>Identifica</strong><p>Describe qué ocurre y desde cuándo.</p></article><article><b>2</b><strong>Comprueba</strong><p>Revisa corriente, conexiones y ajustes.</p></article><article><b>3</b><strong>Evalúa</strong><p>Mira si la comprobación resolvió la falla.</p></article><article><b>4</b><strong>Deriva</strong><p>Si hay que abrir el equipo, que lo haga un técnico.</p></article></div>
+<h3 class="subhead">Procedimiento general</h3><ol class="steps"><li><strong>Anota el síntoma:</strong> el mensaje de error, cuándo aparece y qué estabas haciendo.</li><li><strong>Revisa las conexiones externas:</strong> que los cables estén bien puestos y sin daños visibles.</li><li><strong>Mira los ajustes:</strong> brillo, volumen, Wi-Fi y la pantalla o el dispositivo de audio elegido.</li><li><strong>Reinicia de forma segura:</strong> si el equipo responde y no hay señales de riesgo, reinícialo desde el sistema operativo.</li><li><strong>Comprueba el resultado:</strong> fíjate si la falla desapareció y anota cualquier cambio.</li><li><strong>Pide ayuda:</strong> si sigue igual y para arreglarlo hay que abrir el equipo, cambiar piezas o tocar componentes internos, es trabajo de un técnico.</li></ol>
+<h3 class="subhead">Problemas habituales: qué revisar primero</h3>
+<div class="grid2 fault-guides">
+<article class="info-card"><span class="pill">No enciende</span><h3>Comprueba la alimentación</h3><ol><li>Verifica que el tomacorriente funcione.</li><li>Revisa que el cargador o el cable estén bien conectados y sin daños.</li><li>En una PC, mira también la conexión del monitor y del gabinete.</li><li>Si sigue sin responder, llévalo a revisión.</li></ol><p><strong>Detente:</strong> si hay humo, chispas, olor a quemado o un cable deteriorado.</p></article>
+<article class="info-card"><span class="pill">Equipo lento</span><h3>Revisa el funcionamiento</h3><ol><li>Guarda tu trabajo y cierra las aplicaciones que no uses.</li><li>Comprueba el espacio disponible.</li><li>Revisa si hay actualizaciones pendientes.</li><li>Reinicia desde el sistema si el equipo responde.</li></ol><p><strong>Evita:</strong> borrar carpetas del sistema o instalar “optimizadores” desconocidos. Más abajo hay pasos concretos para Windows.</p></article>
+<article class="info-card"><span class="pill">Sin imagen</span><h3>Comprueba la pantalla</h3><ol><li>En una PC, verifica que el monitor esté encendido.</li><li>Comprueba que el cable de video esté firme.</li><li>Elige la entrada correcta en el monitor.</li><li>En una laptop, sube el brillo y desconecta las pantallas externas.</li></ol><p>Si persiste, que un técnico la diagnostique.</p></article>
+<article class="info-card"><span class="pill">Sin Internet</span><h3>Comprueba la conexión</h3><ol><li>Desactiva el modo avión y activa el Wi-Fi.</li><li>Verifica que elegiste la red correcta.</li><li>Prueba si otros dispositivos se conectan.</li><li>Si ninguno conecta, el problema está en el router o en el proveedor.</li></ol><p>No cambies ajustes avanzados si no sabes cómo devolverlos a su estado original.</p></article>
+<article class="info-card"><span class="pill">Sobrecalentamiento</span><h3>Revisa la ventilación</h3><ol><li>Pon el equipo sobre una superficie firme.</li><li>Comprueba que las rejillas estén libres.</li><li>Cierra las tareas pesadas y deja que se enfríe.</li><li>Si vuelve a calentarse de forma anormal, deja de usarlo y consúltalo con un técnico.</li></ol><p>No metas objetos por las rejillas.</p></article>
+<article class="info-card"><span class="pill">Teclado o ratón</span><h3>Comprueba los periféricos</h3><ol><li>Verifica la conexión USB.</li><li>Prueba otro puerto compatible.</li><li>En los inalámbricos, revisa el interruptor y la batería.</li><li>Si el conector está dañado, no lo fuerces.</li></ol><p>Si falla el teclado integrado de una laptop, hay que revisarlo en un taller.</p></article>
+</div>
+
+<h3 class="subhead">Fallas de software: paso a paso en Windows</h3>
+<p class="muted-note">Los pasos sirven para Windows 10 y 11; los nombres de los menús pueden variar un poco según la versión. Windows 10 terminó su soporte general el 14 de octubre de 2025, así que, si tu equipo lo permite, conviene pasar a Windows 11. En Mac, consulta el soporte de Apple (enlaces en <a href="#fuentes">Fuentes</a>).</p>
+<div class="grid2 fault-guides software-fixes">
+<article class="info-card"><span class="pill">Programa bloqueado</span><h3>Ciérralo desde el Administrador de tareas</h3><ol><li>Pulsa <kbd>Ctrl</kbd> + <kbd>Mayús</kbd> + <kbd>Esc</kbd>.</li><li>En la lista de procesos, busca el programa que dice “No responde”.</li><li>Selecciónalo y pulsa <strong>Finalizar tarea</strong>.</li><li>Ábrelo de nuevo. Si se vuelve a bloquear, actualízalo o reinstálalo.</li></ol><p>Lo que no habías guardado se pierde al finalizar la tarea.</p></article>
+<article class="info-card"><span class="pill">Arranque lento</span><h3>Reduce los programas de inicio</h3><ol><li>Abre el Administrador de tareas (<kbd>Ctrl</kbd> + <kbd>Mayús</kbd> + <kbd>Esc</kbd>).</li><li>Entra en <strong>Aplicaciones de inicio</strong> (en Windows 10, la pestaña <strong>Inicio</strong>).</li><li>Ordena por <strong>Impacto de inicio</strong>. Con clic derecho, deshabilita los de impacto alto que no necesites al encender.</li><li>Reinicia y compara cuánto tarda en arrancar.</li></ol><p>Deshabilitar no desinstala: puedes volver a activarlo cuando quieras.</p></article>
+<article class="info-card"><span class="pill">Poco espacio</span><h3>Libera espacio con Windows</h3><ol><li>Abre <strong>Configuración &gt; Sistema &gt; Almacenamiento</strong>.</li><li>Entra en <strong>Archivos temporales</strong> y marca solo lo que reconozcas, como la papelera y los temporales.</li><li>Desinstala lo que ya no uses en <strong>Configuración &gt; Aplicaciones</strong>.</li><li>Pasa fotos y videos a una unidad externa.</li></ol><p>No marques “Descargas” sin antes revisar esa carpeta.</p></article>
+<article class="info-card"><span class="pill">Posible virus</span><h3>Haz un examen con Seguridad de Windows</h3><ol><li>Busca <strong>Seguridad de Windows</strong> en el menú Inicio y ábrela.</li><li>Entra en <strong>Protección antivirus y contra amenazas</strong> y pulsa <strong>Examen rápido</strong>.</li><li>Si no encuentra nada y aún dudas, en <strong>Opciones de examen</strong> elige <strong>Examen completo</strong>. Tarda más.</li><li>Si detecta algo, sigue las acciones que te propone la aplicación.</li></ol><p>Sospéchalo si aparecen ventanas emergentes, programas que no instalaste o lentitud repentina. Microsoft no llama para avisar de fallas en tu equipo: si te llaman, cuelga.</p></article>
+<article class="info-card"><span class="pill">Tras una actualización</span><h3>Si algo falla justo después</h3><ol><li>Reinicia el equipo una vez.</li><li>Abre <strong>Configuración &gt; Windows Update &gt; Historial de actualizaciones</strong>.</li><li>Entra en <strong>Desinstalar actualizaciones</strong>, elige la más reciente y confirma.</li><li>Pausa las actualizaciones unos días y vuelve a probar.</li></ol><p>En Windows 10 está en <strong>Actualización y seguridad &gt; Windows Update &gt; Ver historial</strong>.</p></article>
+<article class="info-card"><span class="pill">Archivos del sistema</span><h3>Comprueba que no estén dañados</h3><ol><li>Busca “Símbolo del sistema”, clic derecho y <strong>Ejecutar como administrador</strong>.</li><li>Escribe <code>sfc /scannow</code> y pulsa <kbd>Enter</kbd>.</li><li>Espera a que llegue al 100 % sin cerrar la ventana.</li><li>Lee el mensaje final y reinicia.</li></ol><p>Si dice que no pudo reparar algunos archivos, anota el mensaje y consúltalo con un técnico.</p></article>
+<article class="info-card"><span class="pill">Windows no inicia bien</span><h3>Prueba el modo seguro</h3><ol><li>Entra en <strong>Configuración &gt; Sistema &gt; Recuperación &gt; Inicio avanzado</strong> y pulsa <strong>Reiniciar ahora</strong>.</li><li>Elige <strong>Solucionar problemas &gt; Opciones avanzadas &gt; Configuración de inicio &gt; Reiniciar</strong>.</li><li>Pulsa <kbd>4</kbd> (o <kbd>F4</kbd>) para el modo seguro.</li><li>Desde ahí, desinstala el programa o controlador que causó el problema y reinicia con normalidad.</li></ol><p>La pantalla se verá con poca resolución; es normal. Si el equipo ni siquiera llega a ese menú, no insistas y llévalo a un técnico.</p></article>
+<article class="info-card"><span class="pill">Volver atrás</span><h3>Restaurar el sistema</h3><ol><li>Busca “Crear un punto de restauración” en el menú Inicio.</li><li>Pulsa <strong>Restaurar sistema</strong> y luego <strong>Siguiente</strong>.</li><li>Elige un punto de la fecha en que todo funcionaba bien.</li><li>Pulsa <strong>Finalizar</strong> y espera el reinicio.</li></ol><p>No toca tus documentos, pero quita los programas instalados después de ese punto. Solo sirve si la protección del sistema estaba activada.</p></article>
+</div>
+<h3 class="subhead">De lo menos a lo más invasivo</h3>
+<p class="muted-note">Antes de saltar a lo más drástico, recorre esta escalera en orden.</p>
+<ol class="steps"><li><strong>Reiniciar</strong> el equipo desde el sistema.</li><li><strong>Cerrar</strong> el programa que da problemas, desde el Administrador de tareas.</li><li><strong>Actualizar o reinstalar</strong> ese programa.</li><li><strong>Examen antivirus</strong> con Seguridad de Windows.</li><li><strong>Liberar espacio</strong> y reducir los programas de inicio.</li><li><strong>Modo seguro</strong>, o desinstalar la última actualización o controlador instalado.</li><li><strong>Restaurar el sistema</strong> a un punto anterior.</li><li><strong>Restablecer este PC</strong> conservando tus archivos (<strong>Configuración &gt; Sistema &gt; Recuperación &gt; Restablecer este PC</strong>). Las aplicaciones se eliminan, así que haz copia de seguridad antes.</li><li><strong>Reinstalar o formatear</strong>, solo si todo lo anterior falló y ya tienes tu información respaldada.</li></ol>
+
+<h3 class="subhead">Resumen por tipo de falla</h3><div class="table-wrap"><table><thead><tr><th>Tipo de falla</th><th>Ejemplos</th><th>Comprobación inicial</th></tr></thead><tbody><tr><td>Software</td><td>Programa bloqueado, lentitud o errores tras una actualización.</td><td>Cerrar la aplicación si responde, reiniciar y revisar actualizaciones y espacio disponible.</td></tr><tr><td>Conectividad</td><td>Wi-Fi desconectado o periférico que no se reconoce.</td><td>Revisar los ajustes y el cableado, y probar otro puerto compatible.</td></tr><tr><td>Alimentación</td><td>El equipo no enciende o la laptop no carga.</td><td>Revisar el tomacorriente, el cargador y las conexiones externas sin tocar piezas dañadas.</td></tr><tr><td>Hardware</td><td>Pantalla dañada, ruido inusual o teclado que no responde.</td><td>No desmontar el equipo; llevarlo a un técnico.</td></tr></tbody></table></div>
+<div class="notice warning"><strong>Antes de formatear o restaurar:</strong><p>Haz una copia de seguridad y confirma que de verdad hace falta. Formatear no resuelve todo y puede borrar información que ya no se recupera.</p></div></section>
+
+<section class="content" id="diagnostico"><div class="section-head"><span class="section-no">05 · Orientación rápida</span><h2>Guía de diagnóstico inicial</h2><p>Elige el síntoma que presenta tu equipo y verás comprobaciones externas y seguras para empezar a revisar.</p></div><div class="diagnosis"><div class="diagnosis-fields"><div><label for="diagnosticDevice">¿Qué equipo utilizas?</label><select id="diagnosticDevice"><option value="laptop">Laptop</option><option value="desktop">PC de escritorio</option></select></div><div><label for="symptom">¿Qué problema observas?</label><select id="symptom"><option value="">Selecciona una falla…</option><option value="slow">El equipo está lento</option><option value="power">No enciende</option><option value="wifi">No se conecta a Wi-Fi</option><option value="screen">La pantalla no muestra imagen</option><option value="heat">Se calienta demasiado</option><option value="sound">No se escucha el audio</option><option value="usb">No reconoce un dispositivo USB</option><option value="charge">La laptop no carga</option><option value="freeze">Un programa no responde</option><option value="virus">Ventanas emergentes o posible virus</option></select></div></div><div class="result" id="diagnosis" aria-live="polite">Selecciona tu equipo y el síntoma para ver las comprobaciones recomendadas.</div></div></section>
+
+<section class="content" id="rutina"><div class="section-head"><span class="section-no">06 · Organización</span><h2>Rutina de mantenimiento</h2><p>Estas frecuencias son una referencia para un uso diario normal. Si el fabricante de tu equipo indica otra cosa, haz caso al fabricante.</p></div>
+<div class="flow calendar">
+<article><b>Cada semana</b><ul><li>Revisar actualizaciones</li><li>Copia de seguridad de archivos importantes</li><li>Limpiar pantalla y teclado</li></ul></article>
+<article><b>Cada mes</b><ul><li>Rejillas y entorno despejados</li><li>Cables y cargador</li><li>Espacio libre y programas de inicio</li><li>Examen antivirus completo</li></ul></article>
+<article><b>Cada 3 meses</b><ul><li>Limpieza externa completa</li><li>Desinstalar programas que no uses</li><li>Abrir una copia de seguridad para comprobarla</li></ul></article>
+<article><b>Cada 6 a 12 meses</b><ul><li>Limpieza interna y revisión de ventiladores</li><li>Solo por un técnico</li></ul></article>
+</div>
+<div class="table-wrap wide"><table><thead><tr><th>Actividad</th><th>Qué debes revisar</th><th>Frecuencia orientativa</th><th>Quién</th></tr></thead><tbody>
+<tr><td>Pantalla y teclado</td><td>Polvo, huellas y migas.</td><td>Cada semana.</td><td>Usuario</td></tr>
+<tr><td>Limpieza externa completa</td><td>Carcasa, teclas, ratón y periféricos.</td><td>Cada 3 meses, o antes si se ensucia.</td><td>Usuario</td></tr>
+<tr><td>Ventilación</td><td>Rejillas libres y superficie de apoyo despejada.</td><td>Cada mes. Cada 2 semanas si hay mucho polvo o mascotas.</td><td>Usuario</td></tr>
+<tr><td>Cables y cargador</td><td>Cortes, deformaciones y conectores flojos.</td><td>Cada mes.</td><td>Usuario</td></tr>
+<tr><td>Actualizaciones</td><td>Windows Update y la protección antivirus.</td><td>Cada semana.</td><td>Usuario</td></tr>
+<tr><td>Espacio y programas de inicio</td><td>Al menos el 15 % de la unidad libre; aplicaciones que arrancan solas.</td><td>Cada mes.</td><td>Usuario</td></tr>
+<tr><td>Examen antivirus completo</td><td>Amenazas que la protección en tiempo real no detectó.</td><td>Cada mes.</td><td>Usuario</td></tr>
+<tr><td>Copia de seguridad</td><td>Que los archivos importantes estén respaldados y se puedan abrir.</td><td>Cada semana (a diario si tienes trabajos en curso). Comprobar la copia cada 3 meses.</td><td>Usuario</td></tr>
+<tr><td>Limpieza interna y ventiladores</td><td>Polvo acumulado y estado de la pasta térmica.</td><td>Cada 6 a 12 meses (cada 6 en ambientes con polvo).</td><td>Técnico</td></tr>
+</tbody></table></div><div class="notice"><strong>Ten presente:</strong><p>No hay una frecuencia que sirva para todos los equipos. Con polvo, humedad o uso intensivo conviene revisar más seguido. Las tareas internas son siempre para un técnico.</p></div></section>
+
+<section class="content" id="faq"><div class="section-head"><span class="section-no">07 · Dudas habituales</span><h2>Preguntas frecuentes</h2><p>Las dudas que más se repiten al cuidar una laptop o una PC.</p></div>
+<details><summary>¿Cada cuánto tiempo debo hacer mantenimiento preventivo?</summary><p>Como referencia: la pantalla y el teclado cada semana, las rejillas y los cables cada mes, y la limpieza externa completa cada tres meses. La limpieza interna, cada 6 a 12 meses y por un técnico. Si hay mucho polvo o usas el equipo todo el día, hazlo con más frecuencia. En la sección <a href="#rutina">Rutina</a> está la tabla completa.</p></details>
+<details><summary>¿Puedo limpiar la pantalla con cualquier producto?</summary><p>No. Usa un paño de microfibra y sigue las indicaciones del fabricante. Evita productos abrasivos, el papel de cocina, aplicar líquidos directo y presionar el panel.</p></details>
+<details><summary>¿Puedo usar alcohol en la pantalla?</summary><p>Mejor no. Algunos fabricantes permiten alcohol isopropílico al 70 % en la carcasa y en las teclas, pero muchas pantallas tienen recubrimientos que se dañan. Revisa el manual de tu modelo y, si no estás seguro, usa solo el paño de microfibra apenas húmedo.</p></details>
+<details><summary>¿Debo apagar y desconectar el equipo antes de limpiarlo?</summary><p>Sí. Apágalo por completo y desconecta el cargador o el cable de alimentación y los periféricos antes de la limpieza externa.</p></details>
+<details><summary>¿Cuál es la diferencia entre mantenimiento preventivo y correctivo?</summary><p>El preventivo son los cuidados periódicos que reducen la posibilidad de fallas. El correctivo se hace cuando el problema ya apareció y hay que identificarlo y resolverlo.</p></details>
+<details><summary>¿Qué hago si mi computadora está muy lenta?</summary><p>Cierra los programas que no usas, revisa el espacio disponible, reduce los programas de inicio y mira si hay actualizaciones pendientes. Los pasos están en la sección <a href="#correctivo">Mantenimiento correctivo</a>. Si sigue lenta, anota cuándo ocurre y pide que la revisen.</p></details>
+<details><summary>¿Cuánto espacio debo dejar libre en el disco?</summary><p>Una referencia práctica es dejar libre al menos el 15 % de la unidad donde está instalado Windows. Con muy poco espacio, el sistema trabaja más lento y las actualizaciones pueden fallar.</p></details>
+<details><summary>¿Cómo sé qué versión de Windows tengo?</summary><p>Pulsa <kbd>Windows</kbd> + <kbd>R</kbd>, escribe <code>winver</code> y pulsa <kbd>Enter</kbd>. Se abre una ventana con la versión y la compilación.</p></details>
+<details><summary>¿Puedo abrir mi laptop o el gabinete para quitar el polvo?</summary><p>Si no tienes preparación técnica, no. Una intervención mal hecha puede dañar componentes y afectar la garantía. Es mejor que lo haga personal capacitado.</p></details>
+<details><summary>¿Qué debo hacer si se derrama líquido sobre el equipo?</summary><p>Deja de usarlo. Desconéctalo solo si puedes hacerlo sin riesgo. No lo enciendas para comprobar si funciona y llévalo cuanto antes a un técnico.</p></details>
+<details><summary>¿Por qué son importantes las copias de seguridad?</summary><p>Porque permiten recuperar tus documentos si el equipo falla, se pierde el acceso a él o hay que repararlo o reinstalar el sistema.</p></details>
+<details><summary>¿Cuándo debo acudir a un técnico?</summary><p>Cuando la falla sigue después de las comprobaciones básicas, cuando hay que abrir el equipo o cuando aparecen humo, chispas, olor a quemado, batería hinchada o un calentamiento anormal.</p></details>
+</section>
+
+<section class="content" id="glosario"><div class="section-head"><span class="section-no">08 · Términos del manual</span><h2>Glosario</h2><p>Palabras técnicas que aparecen en el manual, explicadas de forma sencilla.</p></div>
+<dl class="glossary">
+<div><dt>Actualización</dt><dd>Paquete que corrige errores y fallas de seguridad del sistema o de un programa, y a veces agrega funciones.</dd></div>
+<div><dt>Antivirus</dt><dd>Programa que detecta y elimina software malicioso. Windows incluye uno, Microsoft Defender, dentro de Seguridad de Windows.</dd></div>
+<div><dt>BIOS / UEFI</dt><dd>Programa guardado en la placa base que arranca el equipo antes que el sistema operativo y permite ajustar opciones básicas del hardware.</dd></div>
+<div><dt>Controlador (driver)</dt><dd>Software que permite que el sistema operativo se comunique con una pieza, como el audio, el video o una impresora.</dd></div>
+<div><dt>Copia de seguridad (respaldo)</dt><dd>Copia de tus archivos en otro lugar para poder recuperarlos si algo falla.</dd></div>
+<div><dt>Descarga electrostática</dt><dd>Chispa de electricidad estática que puede dañar piezas electrónicas. Por eso los técnicos usan pulsera antiestática.</dd></div>
+<div><dt>Disco duro (HDD) y SSD</dt><dd>Unidades donde se guardan el sistema, los programas y tus archivos. El HDD tiene partes mecánicas; el SSD no, y suele ser más rápido y silencioso.</dd></div>
+<div><dt>Disipador</dt><dd>Pieza metálica apoyada sobre el procesador que aleja el calor para que no se sobrecaliente.</dd></div>
+<div><dt>Fuente de alimentación</dt><dd>Componente de la PC de escritorio que convierte la corriente del tomacorriente en la que usan las piezas internas.</dd></div>
+<div><dt>Malware</dt><dd>Nombre general del software malicioso: virus, troyanos, programas espía y otros.</dd></div>
+<div><dt>Memoria RAM</dt><dd>Memoria temporal donde el equipo guarda lo que está usando en ese momento. Se vacía al apagarlo.</dd></div>
+<div><dt>Modo seguro</dt><dd>Forma de iniciar Windows con lo mínimo necesario, útil para encontrar la causa de un problema.</dd></div>
+<div><dt>Pasta térmica</dt><dd>Material que mejora el contacto entre el procesador y el disipador para que el calor pase mejor.</dd></div>
+<div><dt>Periférico</dt><dd>Dispositivo externo que se conecta al equipo, como el ratón, el teclado, el monitor o la impresora.</dd></div>
+<div><dt>Procesador (CPU)</dt><dd>Chip que ejecuta las instrucciones de los programas.</dd></div>
+<div><dt>Punto de restauración</dt><dd>Registro de cómo estaba configurado el sistema en un momento dado, al que se puede volver con Restaurar sistema.</dd></div>
+<div><dt>Rejilla de ventilación</dt><dd>Abertura por donde entra o sale el aire que enfría el equipo. Debe estar siempre libre.</dd></div>
+<div><dt>Sistema operativo</dt><dd>Software base, como Windows, macOS o Linux, que administra el equipo y permite usar los programas.</dd></div>
+</dl></section>
+
+<section class="content" id="fuentes"><div class="section-head"><span class="section-no">09 · Para profundizar</span><h2>Recomendaciones y fuentes</h2><p>Los procedimientos cambian según la marca y el modelo. Para instrucciones exactas, consulta siempre la documentación oficial del fabricante.</p></div>
+<h3 class="subhead">Windows: artículos de Microsoft</h3>
+<ul>
+<li><a href="https://support.microsoft.com/es-es/help/12425" target="_blank" rel="noopener">Liberar espacio de unidad en Windows</a>: Sensor de almacenamiento y Liberador de espacio en disco.</li>
+<li><a href="https://support.microsoft.com/es-es/windows/mantente-protegido-con-seguridad-de-windows-2ae0363d-0ada-c064-8b56-6a39afb6a963" target="_blank" rel="noopener">Mantente protegido con Seguridad de Windows</a>: exámenes rápidos y manuales con el antivirus integrado.</li>
+<li><a href="https://support.microsoft.com/es-es/kb/927392" target="_blank" rel="noopener">Configuración de inicio de Windows</a>: modo seguro y otras opciones de arranque.</li>
+<li><a href="https://support.microsoft.com/es-es/windows/entorno-de-recuperaci%C3%B3n-de-windows-0eb14733-6301-41cb-8d26-06a12b42770b" target="_blank" rel="noopener">Entorno de recuperación de Windows</a>: inicio avanzado y herramientas de recuperación.</li>
+<li><a href="https://support.microsoft.com/es-es/windows/restablecer-el-pc-0ef73740-b927-549b-b7c9-e6f2b48d275e" target="_blank" rel="noopener">Restablecer el PC</a>: opciones para conservar o quitar tus archivos.</li>
+</ul>
+<h3 class="subhead">Limpieza y cuidado de los equipos</h3>
+<ul>
+<li><a href="https://support.microsoft.com/es-es/surface/setup/clean-and-care-for-your-surface" target="_blank" rel="noopener">Limpie y cuide de su Surface</a> (Microsoft): pantalla, teclado y carcasa.</li>
+<li><a href="https://support.apple.com/es-lamr/103258" target="_blank" rel="noopener">Cómo limpiar los productos Apple</a>: Mac portátiles y de escritorio, pantallas y periféricos.</li>
+<li><a href="https://www.hp.com/ar-es/tech-takes/laptops/mantenimiento/como-limpiar-la-pantalla-de-tu-notebook.html" target="_blank" rel="noopener">Cómo limpiar la pantalla de tu notebook</a> (HP).</li>
+<li><a href="https://www.hp.com/mx-es/tech-takes/desktops/mantenimiento/20-consejos-mantenimiento-computadora.html" target="_blank" rel="noopener">20 consejos de mantenimiento de la computadora</a> (HP).</li>
+<li><a href="https://www.asus.com/es/support/faq/1003050/" target="_blank" rel="noopener">Cómo limpiar tu laptop</a> (ASUS): rejillas de ventilación, puertos y teclado.</li>
+</ul>
+<h3 class="subhead">Portales de soporte</h3>
+<ul>
+<li><a href="https://support.microsoft.com/es-es" target="_blank" rel="noopener">Soporte de Microsoft</a>: actualizaciones, seguridad y solución de problemas de Windows.</li>
+<li><a href="https://www.dell.com/support/home/es-es" target="_blank" rel="noopener">Soporte de Dell</a>: manuales y diagnóstico de equipos Dell.</li>
+<li><a href="https://support.hp.com/es-es" target="_blank" rel="noopener">Soporte de HP</a>: mantenimiento y asistencia para equipos HP.</li>
+<li><a href="https://support.apple.com/es-es" target="_blank" rel="noopener">Soporte de Apple</a>: limpieza y cuidado de Mac.</li>
+</ul>
+<h3 class="subhead">Créditos</h3><ul class="small"><li>Fotografías de equipos completos: <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a>.</li><li>Esquemas de la sección de mantenimiento preventivo: elaborados para este manual.</li></ul>
+<div class="notice success"><strong>Regla práctica:</strong><p>Si para arreglarlo hay que abrir el equipo, que lo haga un técnico. Todo lo demás que explica este manual puedes hacerlo tú.</p></div></section>
+</main>
+<footer><div class="container"><div><strong>Manual de mantenimiento de computadoras</strong><p>Sistemas Operativos · UNEFA</p></div><div><p>Elaborado por Gladys Hurtado</p><p>Versión 1.1 · Noviembre de 2026</p><p><a href="https://github.com/hurtadogladys82-create/manualdeusuario" target="_blank" rel="noopener">Sugerencias y correcciones: repositorio en GitHub</a></p></div></div></footer>
+<script src="js/script.js" defer></script>
+</body></html>

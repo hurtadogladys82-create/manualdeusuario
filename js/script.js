@@ -1,3 +1,4 @@
+// Interacciones del manual: menú adaptable, pestañas por equipo y diagnóstico específico.
 document.addEventListener("DOMContentLoaded", () => {
   const deviceTabs = [...document.querySelectorAll(".device-tab")];
 
@@ -32,22 +33,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const guidance = {
     slow: {
       title: "El equipo está lento",
-      intro: "Empieza por las comprobaciones del sistema. No instales herramientas de optimización desconocidas.",
+      intro: "Empieza por lo que puedes comprobar en el propio sistema. No instales “optimizadores” desconocidos.",
       laptop: [
-        "Guarda los documentos y cierra las aplicaciones que no estés utilizando.",
-        "Comprueba el espacio disponible desde la configuración de almacenamiento.",
-        "Revisa las actualizaciones del sistema y permite que terminen sin interrumpirlas.",
-        "Si el equipo responde, reinícialo desde el menú del sistema.",
-        "Si continúa lento, anota cuándo ocurre y solicita una revisión."
+        "Guarda tus documentos y cierra las aplicaciones que no estés usando.",
+        "Abre el Administrador de tareas (Ctrl + Mayús + Esc) y mira qué programa consume más memoria o disco.",
+        "En Aplicaciones de inicio, deshabilita lo que no necesites al encender.",
+        "Comprueba el espacio en Configuración > Sistema > Almacenamiento y deja libre al menos el 15 %.",
+        "Revisa las actualizaciones y deja que terminen sin interrumpirlas, luego reinicia.",
+        "Si sigue lenta, anota cuándo ocurre y que la revise un técnico."
       ],
       desktop: [
-        "Guarda los documentos y cierra las aplicaciones que no estés utilizando.",
-        "Comprueba el espacio disponible en la unidad donde está instalado el sistema.",
-        "Revisa las actualizaciones desde la configuración oficial.",
-        "Reinicia desde el menú del sistema si el equipo responde.",
-        "Si la lentitud continúa, solicita una evaluación antes de borrar archivos o cambiar ajustes avanzados."
+        "Guarda tus documentos y cierra las aplicaciones que no estés usando.",
+        "Abre el Administrador de tareas (Ctrl + Mayús + Esc) y mira qué programa consume más memoria o disco.",
+        "En Aplicaciones de inicio, deshabilita lo que no necesites al encender.",
+        "Comprueba el espacio de la unidad donde está instalado Windows y deja libre al menos el 15 %.",
+        "Revisa las actualizaciones y reinicia al terminar.",
+        "Si la lentitud continúa, que la evalúen antes de borrar archivos o cambiar ajustes avanzados."
       ],
-      warning: "No elimines carpetas del sistema ni formatees como primera medida."
+      warning: "No borres carpetas del sistema ni formatees como primera medida."
     },
     power: {
       title: "El equipo no enciende",
@@ -56,15 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
         "Comprueba que el tomacorriente funcione.",
         "Verifica que el cargador sea el adecuado para el modelo y esté conectado correctamente.",
         "Observa si el cargador o el equipo muestran algún indicador luminoso.",
-        "Si no hay respuesta, registra el modelo y solicita una revisión técnica."
+        "Si no hay respuesta, anota el modelo y llévala a revisión."
       ],
       desktop: [
         "Comprueba que el tomacorriente funcione.",
         "Verifica que el cable de alimentación esté firme en el gabinete.",
         "Comprueba que el monitor tenga alimentación y esté encendido.",
-        "Si no hay respuesta, solicita revisión técnica; no abras la fuente de alimentación."
+        "Si no responde, llévala a revisión. No abras la fuente de alimentación."
       ],
-      warning: "Si hay humo, chispas, olor a quemado o cables dañados, deja de usar el equipo."
+      warning: "Si hay humo, chispas, olor a quemado o cables dañados, deja de usar el equipo y no lo enciendas de nuevo."
     },
     wifi: {
       title: "No hay conexión a Internet",
@@ -79,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Si utilizas cable de red, comprueba que esté conectado en ambos extremos y sin daños.",
         "Si utilizas Wi-Fi, verifica que esté activado y que la red seleccionada sea la correcta.",
         "Comprueba si otros dispositivos pueden conectarse a la misma red.",
-        "Si el problema continúa, registra el mensaje de error y solicita soporte."
+        "Si el problema continúa, anota el mensaje de error y consulta con soporte."
       ],
       warning: "No restablezcas toda la configuración de red si no sabes cómo recuperar los ajustes."
     },
@@ -90,13 +93,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "Comprueba que el equipo esté encendido y conectado a la alimentación si la batería está baja.",
         "Aumenta el brillo con las teclas destinadas a esa función.",
         "Desconecta temporalmente pantallas externas y comprueba si cambia el comportamiento.",
-        "Si el equipo parece iniciar pero la pantalla sigue negra, solicita diagnóstico técnico."
+        "Si el equipo parece iniciar pero la pantalla sigue negra, que un técnico la diagnostique."
       ],
       desktop: [
         "Comprueba que el monitor esté conectado a la corriente y encendido.",
         "Revisa que el cable de video esté firme en ambos extremos y sin daños.",
         "Selecciona en el monitor la entrada correcta, por ejemplo HDMI o DisplayPort.",
-        "Si aparece 'Sin señal' y el gabinete parece encendido, solicita una revisión."
+        "Si aparece 'Sin señal' y el gabinete parece encendido, pide que lo revisen."
       ],
       warning: "No abras el monitor ni el gabinete para manipular componentes internos."
     },
@@ -107,13 +110,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "Coloca la laptop sobre una superficie firme y despejada.",
         "Comprueba que las rejillas de ventilación no estén cubiertas.",
         "Cierra tareas exigentes que no necesites y deja que el equipo se enfríe.",
-        "Si se apaga por temperatura o continúa muy caliente, deja de usarlo y solicita asistencia."
+        "Si se apaga por temperatura o sigue muy caliente, deja de usarlo y consúltalo con un técnico."
       ],
       desktop: [
         "Comprueba que el gabinete tenga espacio libre alrededor.",
         "Verifica visualmente que las rejillas externas no estén obstruidas.",
         "Cierra tareas exigentes que no necesites y observa si vuelve a una temperatura habitual.",
-        "Si persiste, solicita una revisión técnica de la ventilación interna."
+        "Si persiste, hay que revisar la ventilación interna, y eso lo hace un técnico."
       ],
       warning: "No introduzcas objetos en las rejillas ni abras el equipo para limpiar ventiladores si no tienes preparación técnica."
     },
@@ -130,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Comprueba el volumen del sistema y del monitor o altavoces, si tienen control propio.",
         "Verifica que los altavoces estén conectados a la salida correcta y tengan alimentación.",
         "Revisa en la configuración cuál es el dispositivo de salida seleccionado.",
-        "Si no funciona, solicita ayuda para revisar el controlador de audio."
+        "Si no funciona, pide ayuda para revisar el controlador de audio."
       ],
       warning: "No descargues controladores desde páginas desconocidas."
     },
@@ -141,13 +144,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "Retira el dispositivo con la opción de expulsión segura si el sistema lo permite.",
         "Conéctalo de nuevo con cuidado en un puerto compatible.",
         "Comprueba si el dispositivo funciona en otro equipo confiable.",
-        "Si varios puertos fallan, solicita revisión técnica."
+        "Si fallan varios puertos, llévala a revisión."
       ],
       desktop: [
         "Retira el dispositivo con la opción de expulsión segura si el sistema lo permite.",
         "Prueba otro puerto USB compatible, sin forzar el conector.",
         "Comprueba si el dispositivo funciona en otro equipo confiable.",
-        "Si varios puertos fallan, solicita revisión técnica."
+        "Si fallan varios puertos, llévala a revisión."
       ],
       warning: "No introduzcas objetos metálicos en los puertos ni fuerces conectores doblados."
     },
@@ -164,7 +167,45 @@ document.addEventListener("DOMContentLoaded", () => {
         "La carga de batería corresponde principalmente a laptops. Para una PC de escritorio, selecciona 'No enciende' y revisa la alimentación externa.",
         "No conectes adaptadores improvisados ni cambies componentes sin asistencia."
       ],
-      warning: "Si la batería está hinchada, muy caliente o dañada, deja de utilizar el equipo y solicita asistencia."
+      warning: "Si la batería está hinchada, muy caliente o dañada, deja de usar el equipo y llévalo a un técnico."
+    },
+    freeze: {
+      title: "Un programa no responde",
+      intro: "Casi siempre se resuelve cerrando solo ese programa, sin reiniciar todo el equipo.",
+      laptop: [
+        "Espera un minuto: a veces el programa está trabajando y solo tarda.",
+        "Pulsa Ctrl + Mayús + Esc para abrir el Administrador de tareas.",
+        "Busca el programa que dice “No responde”, selecciónalo y pulsa Finalizar tarea.",
+        "Ábrelo otra vez. Si se bloquea de nuevo, actualízalo o reinstálalo."
+      ],
+      desktop: [
+        "Espera un minuto: a veces el programa está trabajando y solo tarda.",
+        "Pulsa Ctrl + Mayús + Esc para abrir el Administrador de tareas.",
+        "Busca el programa que dice “No responde”, selecciónalo y pulsa Finalizar tarea.",
+        "Ábrelo otra vez. Si se bloquea de nuevo, actualízalo o reinstálalo."
+      ],
+      warning: "Al finalizar la tarea se pierde lo que no habías guardado. Si todo el equipo está congelado y no responde, mantén pulsado el botón de encendido solo como último recurso."
+    },
+    virus: {
+      title: "Ventanas emergentes o posible virus",
+      intro: "Señales típicas: ventanas que aparecen solas, páginas de inicio cambiadas, programas que no instalaste o lentitud repentina.",
+      laptop: [
+        "No hagas clic en las ventanas emergentes ni llames a números que aparezcan en ellas.",
+        "Busca “Seguridad de Windows” en el menú Inicio y ábrela.",
+        "Entra en Protección antivirus y contra amenazas y pulsa Examen rápido.",
+        "Si no encuentra nada y aún dudas, en Opciones de examen elige Examen completo.",
+        "Si detecta algo, sigue las acciones que te propone la aplicación y reinicia.",
+        "Si introdujiste contraseñas en un sitio sospechoso, cámbialas desde otro dispositivo."
+      ],
+      desktop: [
+        "No hagas clic en las ventanas emergentes ni llames a números que aparezcan en ellas.",
+        "Busca “Seguridad de Windows” en el menú Inicio y ábrela.",
+        "Entra en Protección antivirus y contra amenazas y pulsa Examen rápido.",
+        "Si no encuentra nada y aún dudas, en Opciones de examen elige Examen completo.",
+        "Si detecta algo, sigue las acciones que te propone la aplicación y reinicia.",
+        "Si introdujiste contraseñas en un sitio sospechoso, cámbialas desde otro dispositivo."
+      ],
+      warning: "Microsoft no llama para avisar de problemas en tu equipo. Si alguien te llama diciendo que sí, cuelga."
     }
   };
 
@@ -178,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     result.replaceChildren();
     if (!selected || !guidance[selected]) {
-      result.textContent = "Selecciona tu equipo y el síntoma para consultar las comprobaciones recomendadas.";
+      result.textContent = "Selecciona tu equipo y el síntoma para ver las comprobaciones recomendadas.";
       return;
     }
 

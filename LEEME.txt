@@ -1,0 +1,9 @@
+Bachiller: Gladys Hurtado
+Facilitador: Ing. Ninoska Palma
+Para abrir por visual studio code:
+1. Extrae esta carpeta.
+2. Abre la carpeta desde Visual Studio Code.
+3. Abre index.html con Live Server o directamente en el navegador.
+
+Para abrir la web:
+https://roaring-tapioca-874241.netlify.app
